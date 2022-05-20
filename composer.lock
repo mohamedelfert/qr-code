@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6558f74828bca9ebecac73d90cea4b1a",
+    "content-hash": "d06b1ab00070157a0c55d7f8de5b3ce1",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -61,6 +61,60 @@
                 "source": "https://github.com/asm89/stack-cors/tree/1.3.0"
             },
             "time": "2019-12-24T22:41:47+00:00"
+        },
+        {
+            "name": "bacon/bacon-qr-code",
+            "version": "2.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Bacon/BaconQrCode.git",
+                "reference": "d70c840f68657ce49094b8d91f9ee0cc07fbf66c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Bacon/BaconQrCode/zipball/d70c840f68657ce49094b8d91f9ee0cc07fbf66c",
+                "reference": "d70c840f68657ce49094b8d91f9ee0cc07fbf66c",
+                "shasum": ""
+            },
+            "require": {
+                "dasprid/enum": "^1.0.3",
+                "ext-iconv": "*",
+                "php": "^7.1 || ^8.0"
+            },
+            "require-dev": {
+                "phly/keep-a-changelog": "^2.1",
+                "phpunit/phpunit": "^7 | ^8 | ^9",
+                "spatie/phpunit-snapshot-assertions": "^4.2.9",
+                "squizlabs/php_codesniffer": "^3.4"
+            },
+            "suggest": {
+                "ext-imagick": "to generate QR code images"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "BaconQrCode\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Scholzen 'DASPRiD'",
+                    "email": "mail@dasprids.de",
+                    "homepage": "https://dasprids.de/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "BaconQrCode is a QR code generator for PHP.",
+            "homepage": "https://github.com/Bacon/BaconQrCode",
+            "support": {
+                "issues": "https://github.com/Bacon/BaconQrCode/issues",
+                "source": "https://github.com/Bacon/BaconQrCode/tree/2.0.7"
+            },
+            "time": "2022-03-14T02:02:36+00:00"
         },
         {
             "name": "brick/math",
@@ -121,6 +175,53 @@
                 }
             ],
             "time": "2021-08-15T20:50:18+00:00"
+        },
+        {
+            "name": "dasprid/enum",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DASPRiD/Enum.git",
+                "reference": "5abf82f213618696dda8e3bf6f64dd042d8542b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DASPRiD/Enum/zipball/5abf82f213618696dda8e3bf6f64dd042d8542b2",
+                "reference": "5abf82f213618696dda8e3bf6f64dd042d8542b2",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7 | ^8 | ^9",
+                "squizlabs/php_codesniffer": "^3.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DASPRiD\\Enum\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Scholzen 'DASPRiD'",
+                    "email": "mail@dasprids.de",
+                    "homepage": "https://dasprids.de/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP 7.1 enum implementation",
+            "keywords": [
+                "enum",
+                "map"
+            ],
+            "support": {
+                "issues": "https://github.com/DASPRiD/Enum/issues",
+                "source": "https://github.com/DASPRiD/Enum/tree/1.0.3"
+            },
+            "time": "2020-10-02T16:03:48+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -559,37 +660,45 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.5.5",
+            "version": "7.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "9d4290de1cfd701f38099ef7e183b64b4b7b0c5e"
+                "reference": "ac1ec1cd9b5624694c3a40be801d94137afb12b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/9d4290de1cfd701f38099ef7e183b64b4b7b0c5e",
-                "reference": "9d4290de1cfd701f38099ef7e183b64b4b7b0c5e",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ac1ec1cd9b5624694c3a40be801d94137afb12b4",
+                "reference": "ac1ec1cd9b5624694c3a40be801d94137afb12b4",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "guzzlehttp/promises": "^1.0",
-                "guzzlehttp/psr7": "^1.6.1",
-                "php": ">=5.5",
-                "symfony/polyfill-intl-idn": "^1.17.0"
+                "guzzlehttp/promises": "^1.5",
+                "guzzlehttp/psr7": "^1.8.3 || ^2.1",
+                "php": "^7.2.5 || ^8.0",
+                "psr/http-client": "^1.0",
+                "symfony/deprecation-contracts": "^2.2 || ^3.0"
+            },
+            "provide": {
+                "psr/http-client-implementation": "1.0"
             },
             "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.4.1",
                 "ext-curl": "*",
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4 || ^7.0",
-                "psr/log": "^1.1"
+                "php-http/client-integration-tests": "^3.0",
+                "phpunit/phpunit": "^8.5.5 || ^9.3.5",
+                "psr/log": "^1.1 || ^2.0 || ^3.0"
             },
             "suggest": {
+                "ext-curl": "Required for CURL handler support",
+                "ext-intl": "Required for Internationalized Domain Name (IDN) support",
                 "psr/log": "Required for using the Log middleware"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.5-dev"
+                    "dev-master": "7.4-dev"
                 }
             },
             "autoload": {
@@ -606,27 +715,72 @@
             ],
             "authors": [
                 {
+                    "name": "Graham Campbell",
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
+                },
+                {
                     "name": "Michael Dowling",
                     "email": "mtdowling@gmail.com",
                     "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Jeremy Lindblom",
+                    "email": "jeremeamia@gmail.com",
+                    "homepage": "https://github.com/jeremeamia"
+                },
+                {
+                    "name": "George Mponos",
+                    "email": "gmponos@gmail.com",
+                    "homepage": "https://github.com/gmponos"
+                },
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com",
+                    "homepage": "https://github.com/Nyholm"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com",
+                    "homepage": "https://github.com/sagikazarmark"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "email": "webmaster@tubo-world.de",
+                    "homepage": "https://github.com/Tobion"
                 }
             ],
             "description": "Guzzle is a PHP HTTP client library",
-            "homepage": "http://guzzlephp.org/",
             "keywords": [
                 "client",
                 "curl",
                 "framework",
                 "http",
                 "http client",
+                "psr-18",
+                "psr-7",
                 "rest",
                 "web service"
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/6.5"
+                "source": "https://github.com/guzzle/guzzle/tree/7.4.2"
             },
-            "time": "2020-06-16T21:01:06+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/Nyholm",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttp/guzzle",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-03-20T14:16:28+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -714,29 +868,32 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.8.5",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "337e3ad8e5716c15f9657bd214d16cc5e69df268"
+                "reference": "c94a94f120803a18554c1805ef2e539f8285f9a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/337e3ad8e5716c15f9657bd214d16cc5e69df268",
-                "reference": "337e3ad8e5716c15f9657bd214d16cc5e69df268",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/c94a94f120803a18554c1805ef2e539f8285f9a2",
+                "reference": "c94a94f120803a18554c1805ef2e539f8285f9a2",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0",
-                "psr/http-message": "~1.0",
-                "ralouphie/getallheaders": "^2.0.5 || ^3.0.0"
+                "php": "^7.2.5 || ^8.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0",
+                "ralouphie/getallheaders": "^3.0"
             },
             "provide": {
+                "psr/http-factory-implementation": "1.0",
                 "psr/http-message-implementation": "1.0"
             },
             "require-dev": {
-                "ext-zlib": "*",
-                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20 || ^8.5.8 || ^9.3.10"
+                "bamarni/composer-bin-plugin": "^1.4.1",
+                "http-interop/http-factory-tests": "^0.9",
+                "phpunit/phpunit": "^8.5.8 || ^9.3.10"
             },
             "suggest": {
                 "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
@@ -744,13 +901,10 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.7-dev"
+                    "dev-master": "2.2-dev"
                 }
             },
             "autoload": {
-                "files": [
-                    "src/functions_include.php"
-                ],
                 "psr-4": {
                     "GuzzleHttp\\Psr7\\": "src/"
                 }
@@ -789,6 +943,11 @@
                     "name": "Tobias Schultze",
                     "email": "webmaster@tubo-world.de",
                     "homepage": "https://github.com/Tobion"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com",
+                    "homepage": "https://sagikazarmark.hu"
                 }
             ],
             "description": "PSR-7 message implementation that also provides common utility methods",
@@ -804,7 +963,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/1.8.5"
+                "source": "https://github.com/guzzle/psr7/tree/2.2.1"
             },
             "funding": [
                 {
@@ -820,7 +979,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-20T21:51:18+00:00"
+            "time": "2022-03-20T21:55:58+00:00"
         },
         {
             "name": "laravel/framework",
@@ -1051,6 +1210,61 @@
                 "source": "https://github.com/laravel/tinker/tree/v2.7.2"
             },
             "time": "2022-03-23T12:38:24+00:00"
+        },
+        {
+            "name": "laravel/ui",
+            "version": "v2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/ui.git",
+                "reference": "d01a705763c243b07be795e9d1bb47f89260f73d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/d01a705763c243b07be795e9d1bb47f89260f73d",
+                "reference": "d01a705763c243b07be795e9d1bb47f89260f73d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^7.0",
+                "illuminate/filesystem": "^7.0",
+                "illuminate/support": "^7.0",
+                "php": "^7.2.5|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Ui\\UiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Ui\\": "src/",
+                    "Illuminate\\Foundation\\Auth\\": "auth-backend/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel UI utilities and presets.",
+            "keywords": [
+                "laravel",
+                "ui"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/ui/issues",
+                "source": "https://github.com/laravel/ui/tree/v2.5.0"
+            },
+            "time": "2020-11-03T19:45:19+00:00"
         },
         {
             "name": "league/commonmark",
@@ -1787,6 +2001,113 @@
             "time": "2019-01-08T18:20:26+00:00"
         },
         {
+            "name": "psr/http-client",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-client.git",
+                "reference": "2dfb5f6c5eff0e91e20e913f8c5452ed95b86621"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-client/zipball/2dfb5f6c5eff0e91e20e913f8c5452ed95b86621",
+                "reference": "2dfb5f6c5eff0e91e20e913f8c5452ed95b86621",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0 || ^8.0",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP clients",
+            "homepage": "https://github.com/php-fig/http-client",
+            "keywords": [
+                "http",
+                "http-client",
+                "psr",
+                "psr-18"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-client/tree/master"
+            },
+            "time": "2020-06-29T06:28:15+00:00"
+        },
+        {
+            "name": "psr/http-factory",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-factory.git",
+                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
+                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for PSR-7 HTTP message factories",
+            "keywords": [
+                "factory",
+                "http",
+                "message",
+                "psr",
+                "psr-17",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-factory/tree/master"
+            },
+            "time": "2019-04-30T12:38:16+00:00"
+        },
+        {
             "name": "psr/http-message",
             "version": "1.0.1",
             "source": {
@@ -2234,6 +2555,126 @@
                 }
             ],
             "time": "2021-09-25T23:10:38+00:00"
+        },
+        {
+            "name": "simplesoftwareio/simple-qrcode",
+            "version": "4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SimpleSoftwareIO/simple-qrcode.git",
+                "reference": "916db7948ca6772d54bb617259c768c9cdc8d537"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SimpleSoftwareIO/simple-qrcode/zipball/916db7948ca6772d54bb617259c768c9cdc8d537",
+                "reference": "916db7948ca6772d54bb617259c768c9cdc8d537",
+                "shasum": ""
+            },
+            "require": {
+                "bacon/bacon-qr-code": "^2.0",
+                "ext-gd": "*",
+                "php": ">=7.2|^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~1",
+                "phpunit/phpunit": "~9"
+            },
+            "suggest": {
+                "ext-imagick": "Allows the generation of PNG QrCodes.",
+                "illuminate/support": "Allows for use within Laravel."
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "SimpleSoftwareIO\\QrCode\\QrCodeServiceProvider"
+                    ],
+                    "aliases": {
+                        "QrCode": "SimpleSoftwareIO\\QrCode\\Facades\\QrCode"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SimpleSoftwareIO\\QrCode\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simple Software LLC",
+                    "email": "support@simplesoftware.io"
+                }
+            ],
+            "description": "Simple QrCode is a QR code generator made for Laravel.",
+            "homepage": "https://www.simplesoftware.io/#/docs/simple-qrcode",
+            "keywords": [
+                "Simple",
+                "generator",
+                "laravel",
+                "qrcode",
+                "wrapper"
+            ],
+            "support": {
+                "issues": "https://github.com/SimpleSoftwareIO/simple-qrcode/issues",
+                "source": "https://github.com/SimpleSoftwareIO/simple-qrcode/tree/4.2.0"
+            },
+            "time": "2021-02-08T20:43:55+00:00"
+        },
+        {
+            "name": "spatie/color",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/color.git",
+                "reference": "5c424dbfa919cc7acdacbf6fdcedb89f790bc04b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/color/zipball/5c424dbfa919cc7acdacbf6fdcedb89f790bc04b",
+                "reference": "5c424dbfa919cc7acdacbf6fdcedb89f790bc04b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Color\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian De Deyne",
+                    "email": "sebastian@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A little library to handle color conversions",
+            "homepage": "https://github.com/spatie/color",
+            "keywords": [
+                "color",
+                "conversion",
+                "rgb",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/color/issues",
+                "source": "https://github.com/spatie/color/tree/master"
+            },
+            "time": "2017-02-03T10:05:49+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
